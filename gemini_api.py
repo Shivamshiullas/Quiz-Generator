@@ -5,10 +5,7 @@ import os
 genai.configure(api_key="AIzaSyA0SlEVcamDSIGGwzCne7x1HNDJNdDW1VU")
 
 def ask_gemini_mcq_generation(text: str):
-    """
-    Sends the provided notes text to Gemini and requests MCQ generation.
-    Returns a list of dicts with keys: question, options, answer.
-    """
+ 
 
     prompt = f"""
 Generate as many multiple-choice questions as possible from the following notes.
